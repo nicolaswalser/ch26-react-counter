@@ -1,12 +1,12 @@
-export const ParagraphWithLink = (props) => {
+export const ParagraphWithLink = ({ href, color, children }) => {
   const myParagaph = (
     <>
       <a
-        href={props.href}
-        style={{ textDecoration: "none", color: props.color }}
+        href={href}
+        style={{ textDecoration: "none", color: color }}
         target="_blank"
       >
-        <p>{props.children}</p>
+        <p>{children}</p>
       </a>
     </>
   );

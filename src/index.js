@@ -9,10 +9,10 @@ root.render(
       href="https://www.linkedin.com/in/nicolas-walser/"
       color="red"
     >
-      Take me to Nicks LinkedIn
+      Take me to Nick's LinkedIn
     </ParagraphWithLink>
     <ParagraphWithLink href="https://github.com/walsergomez" color="blue">
-      Take me to Nicks GitHub
+      Take me to Nick's GitHub
     </ParagraphWithLink>
   </React.StrictMode>
 );
