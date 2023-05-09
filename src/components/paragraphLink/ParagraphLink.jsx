@@ -1,12 +1,10 @@
-export const ParagraphWithLink = ({ href, color, children }) => {
+import "../../styles/paragraphLink/paragraph-link.css";
+
+export const ParagraphWithLink = ({ href, color = "green", children }) => {
   const myParagaph = (
     <>
-      <a
-        href={href}
-        style={{ textDecoration: "none", color: color }}
-        target="_blank"
-      >
-        <p>{children}</p>
+      <a href={href} style={{ color: color }} target="_blank">
+        <p className="content">{children}</p>
       </a>
     </>
   );
