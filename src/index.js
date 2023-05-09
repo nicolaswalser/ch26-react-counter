@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { Fragment } from "react";
+import ReactDOM from "react-dom/client";
+import { ParagraphWithLink } from "./components/paragraphLink/ParagraphLink";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ParagraphWithLink
+      href="https://www.linkedin.com/in/nicolas-walser/"
+      color="red"
+    >
+      Take me to Nicks LinkedIn
+    </ParagraphWithLink>
+    <ParagraphWithLink href="https://github.com/walsergomez" color="blue">
+      Take me to Nicks GitHub
+    </ParagraphWithLink>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
