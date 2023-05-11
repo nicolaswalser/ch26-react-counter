@@ -1,11 +1,12 @@
 import React from "react";
+import ButtonMui from "@mui/material/Button";
 
 export const Button = ({ onClick, children }) => {
   return (
     <>
-      <button style={{ color: "blue" }} onClick={onClick}>
+      <ButtonMui onClick={onClick} variant="contained" color="success">
         {children}
-      </button>
+      </ButtonMui>
     </>
   );
 };
